@@ -14,5 +14,6 @@ public class CommonSteps extends BaseStep {
     @Given("Log in to {} page")
     public void logInToPage(String page) {
         ctx().getDriver().get(page);
+        log.info(" opening (⊃｡•́‿•̀｡)⊃ "+ page);
     }
 }
