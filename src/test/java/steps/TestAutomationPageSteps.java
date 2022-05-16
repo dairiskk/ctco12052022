@@ -1,6 +1,5 @@
 package steps;
 
-import infrastructure.BaseStep;
 import infrastructure.TestContext;
 import io.cucumber.java.en.Then;
 import org.junit.jupiter.api.Assertions;

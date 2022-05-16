@@ -1,6 +1,5 @@
 package steps;
 
-import infrastructure.BaseStep;
 import infrastructure.TestContext;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;

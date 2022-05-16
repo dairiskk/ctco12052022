@@ -3,7 +3,7 @@ package infrastructure;
 
 public class TestContext {
 
-    private ScenarioContext scenarioContext;
+    private final ScenarioContext scenarioContext;
 
     public TestContext() {
         scenarioContext = new ScenarioContext();

@@ -1,6 +1,7 @@
-package infrastructure;
+package steps;
 
-import pageObjects.NavigationPageObject;
+import infrastructure.ScenarioContext;
+import infrastructure.TestContext;
 
 public class BaseStep {
 

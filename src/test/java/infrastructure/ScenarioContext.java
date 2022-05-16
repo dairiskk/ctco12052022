@@ -15,7 +15,7 @@ public class ScenarioContext {
 
 
     public ScenarioContext() {
-        scenarioContext = new HashMap<String, Object>();
+        scenarioContext = new HashMap<>();
         this.driver = new Driver();
         this.driver.setBrowser("Chrome");
         this.driver.maximize();
