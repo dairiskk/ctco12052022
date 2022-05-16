@@ -19,7 +19,7 @@ public class ScenarioContext {
         this.driver = new Driver();
         this.driver.setBrowser("Chrome");
         this.driver.maximize();
-        this.driver.setImplicitWait(5);
+        this.driver.setImplicitWait(8);
     }
 
     public void setContext(String key, Object value) {

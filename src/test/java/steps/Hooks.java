@@ -13,7 +13,6 @@ public class Hooks extends BaseStep {
         super(testContext);
         this.testContext = testContext;
     }
-
     @Before
     public void BeforeSteps() {
         BasicConfigurator.configure();

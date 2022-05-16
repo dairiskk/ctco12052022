@@ -16,7 +16,7 @@ public class VacanciesPageObject extends BasePage {
         super(driver);
         this.driver = driver;
         this.basePage = new BasePage(this.driver);
-        Assertions.assertTrue(driver.findElement(vacanciesPage).isDisplayed());
+        waitForElementToBeDisplayed(vacanciesPage);
     }
 
     public void openVacancyByName(String vacancyName) throws Exception {

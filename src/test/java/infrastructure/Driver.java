@@ -9,8 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
+import java.util.List;
+import java.util.Set;
 
-public class Driver {
+public class Driver implements WebDriver {
     WebDriver driver;
 
     public void setBrowser(String browser) {
@@ -34,8 +36,53 @@ public class Driver {
         this.driver.get(url);
     }
 
+    @Override
+    public String getCurrentUrl() {
+        return null;
+    }
+
+    @Override
+    public String getTitle() {
+        return null;
+    }
+
+    @Override
+    public List<WebElement> findElements(By by) {
+        return null;
+    }
+
     public void close() {
         this.driver.close();
+    }
+
+    @Override
+    public void quit() {
+
+    }
+
+    @Override
+    public Set<String> getWindowHandles() {
+        return null;
+    }
+
+    @Override
+    public String getWindowHandle() {
+        return null;
+    }
+
+    @Override
+    public TargetLocator switchTo() {
+        return null;
+    }
+
+    @Override
+    public Navigation navigate() {
+        return null;
+    }
+
+    @Override
+    public Options manage() {
+        return null;
     }
 
     public Actions getActions() {
@@ -44,6 +91,11 @@ public class Driver {
 
     public WebElement findElement(By elem) {
         return this.driver.findElement(elem);
+    }
+
+    @Override
+    public String getPageSource() {
+        return null;
     }
 
     public void setImplicitWait(int seconds) {

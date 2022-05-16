@@ -15,7 +15,7 @@ public class NavigationPageObject extends BasePage {
         super(driver);
         this.driver = driver;
         this.basePage = new BasePage(this.driver);
-        Assertions.assertTrue(driver.findElement(navigationPageSection).isDisplayed());
+        waitForElementToBeDisplayed(navigationPageSection);
     }
 
     public void openCareersMenu() {

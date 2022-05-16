@@ -3,12 +3,12 @@ package steps;
 import infrastructure.BaseStep;
 import infrastructure.TestContext;
 import io.cucumber.java.en.Then;
-import pageObjects.NavigationPageObject;
 import pageObjects.VacanciesPageObject;
 
 public class VacanciesPageSteps extends BaseStep {
 
     VacanciesPageObject vacanciesPageObject = new VacanciesPageObject(ctx().getDriver());
+
     public VacanciesPageSteps(TestContext testContext) {
         super(testContext);
     }
