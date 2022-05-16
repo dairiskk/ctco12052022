@@ -48,7 +48,7 @@ public class Driver implements WebDriver {
 
     @Override
     public List<WebElement> findElements(By by) {
-        return null;
+        return this.driver.findElements(by);
     }
 
     public void close() {
